@@ -64,7 +64,12 @@ body {
 .header_section {
   padding-top: 10px;
   font-family: 'Poppins', sans-serif;
-
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #e9c013;
+  z-index: 999;
 }
 
 nav.navbar.navbar-expand-lg {
