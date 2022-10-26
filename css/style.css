@@ -197,7 +197,8 @@ a:focus {
 }
 
 .hero_img-container img {
-  width: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 .hero_detail-box {
