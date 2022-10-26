@@ -5,10 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --blue-sahabat: ;
-  --orange-sahabat: ;
-  --old-blue: ;
-  --green-sahabat: ;
+  --blue-sahabat: rgb(41, 171, 226);
+  --orange-sahabat: rgb(247, 147, 30);
+  --old-blue: rgb(0, 113, 188);
+  --green-sahabat: rgb(140, 198, 63);
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
