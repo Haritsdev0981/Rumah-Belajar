@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #fefeff;
+  overflow-x: hidden;
 }
 
 .layout_padding {
@@ -68,7 +73,7 @@ body {
   left: 0;
   right: 0;
   top: 0;
-  background: #e9c013;
+  background: var(--blue-sahabat);
   z-index: 999;
 }
 
@@ -105,6 +110,19 @@ a:focus {
   position: relative;
 }
 
+nav a.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  margin: auto;
+  height: 2px;
+  background: #f7f6f7;
+  transition: width 0.3s;
+}
+
+nav a.nav-link:hover::after {
+  width: 100%;
+}
 
 
 .top_container::before {
@@ -112,9 +130,8 @@ a:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../images/hero-bg.png);
-  background-size: 100% 100%;
-  background-position: right bottom;
+  background: url(../images/hero-bg.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
 }
@@ -131,7 +148,7 @@ a:focus {
   height: 75px;
   bottom: 20%;
   left: 6%;
-  background-color: #fdd31d;
+  background-color: var(--old-blue);
 }
 
 
@@ -197,8 +214,6 @@ a:focus {
 
 .hero_img-container {
   width: 68%;
-  margin-right: -8%;
-  margin-top: -5%;
 }
 
 .hero_img-container img {
@@ -220,6 +235,7 @@ a:focus {
 .hero_detail-box p {
   margin-top: 20px;
   margin-bottom: 35px;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 
@@ -258,7 +274,7 @@ a:focus {
 }
 
 .about_section a {
-  background-color: #6ebca8;
+  background-color: var(--green-sahabat);
   color: #fefeff;
 }
 
@@ -268,7 +284,7 @@ a:focus {
 
 
 .admission_section a {
-  background-color: #fdd31d;
+  background-color: var(--orange-sahabat);
   color: #fefeff;
 }
 
@@ -281,7 +297,7 @@ a:focus {
 }
 
 .why_section a {
-  background-color: #6ebca8;
+  background-color: var(--green-sahabat);
   color: #fefeff;
 }
 
@@ -291,7 +307,7 @@ a:focus {
 
 
 .determine_section a {
-  background-color: #fdd31d;
+  background-color: var(--orange-sahabat);
   color: #fefeff;
 }
 
@@ -391,13 +407,13 @@ a:focus {
 .client_section .carousel-indicators li {
   width: 25px;
   height: 25px;
-  background-color: #6bd1bd;
+  background-color: var(--blue-sahabat);
   border-radius: 100%;
   opacity: 1;
 }
 
 .client_section .carousel-indicators li.active {
-  background-color: #fdd31d;
+  background-color: var(--orange-sahabat);
 }
 
 /* end client section */
@@ -425,7 +441,7 @@ a:focus {
 
 .contact_form-container button {
   border: none;
-  background-color: #6bd1bd;
+  background-color: var(--green-sahabat);
   color: #fff;
   font-size: 15px;
   padding: 15px 45px;
@@ -472,7 +488,7 @@ a:focus {
 .info_logo-box h2 {
   font-weight: bold;
   padding: 5px 7px;
-  border-bottom: 1.5px solid #fdd31d;
+  border-bottom: 1.5px solid var(--orange-sahabat);
 }
 
 .info_section ul {
@@ -510,7 +526,7 @@ a:focus {
 }
 
 .info_section .form_container button {
-  background-color: #fdd31d;
+  background-color: var(--orange-sahabat);
   border: none;
   outline: none;
   color: #fff;
@@ -544,7 +560,7 @@ a:focus {
 /* footer section*/
 
 .footer_section {
-  background-color: #d8b109;
+  background-color: var(--orange-sahabat);
   padding: 20px 15px;
   font-family: 'Poppins', sans-serif;
 
@@ -563,3 +579,7 @@ a:focus {
 
 
 /* end footer section*/
+
+.__transition {
+  transition: .5s;
+}
