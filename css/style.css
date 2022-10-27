@@ -633,3 +633,21 @@ div.row {
 .col-gap-30 {
 	column-gap: 30px;
 }
+
+ul.list-group.custom {
+	list-style-type: disc;
+	list-style-image: url(../img/check.svg);
+	row-gap: 16px;
+}
+
+ul.list-group.custom li {
+	display: list-item;
+	border: none;
+	padding: 0;
+}
+
+.row-gap-16 {
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
