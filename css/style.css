@@ -143,7 +143,7 @@ nav a.nav-link:hover::after {
 	background-image: none;
 }
 
-.top_container::after {
+/* .top_container::after {
 	content: "";
 	position: absolute;
 	width: 75px;
@@ -151,7 +151,7 @@ nav a.nav-link:hover::after {
 	bottom: -17%;
 	left: 6%;
 	background-color: var(--old-blue);
-}
+} */
 
 .sub_page .top_container::after {
 	display: none;
