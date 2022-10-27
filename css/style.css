@@ -129,7 +129,7 @@ nav a.nav-link:hover::after {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: 0 100px url(../images/hero-bg.svg), linear-gradient(180deg, var(--blue-sahabat) 15%, transparent 15%);
+	background: 0 100px url(../IMG/wave.svg), linear-gradient(180deg, var(--blue-sahabat) 15%, transparent 15%);
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: -1;
