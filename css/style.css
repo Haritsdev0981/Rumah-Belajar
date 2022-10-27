@@ -322,6 +322,22 @@ nav a.nav-link:hover::after {
 	color: #fefeff;
 }
 
+.list-group .blue {
+	background-color: var(--blue-sahabat);
+}
+
+.list-group .old-blue {
+	background-color: var(--old-blue);
+}
+
+.list-group .green {
+	background-color: var(--green-sahabat);
+}
+
+.list-group .orange {
+	background-color: var(--orange-sahabat);
+}
+
 /* end why section */
 
 /* determine section */
