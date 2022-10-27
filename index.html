@@ -12,9 +12,9 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  
+
   <title>Rumah Belajar</title>
-  
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="./img/logo-web.png" type="image/x-icon">
 
@@ -59,18 +59,22 @@
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link active" href="#home"> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="#about"> About </a>
                 </li>
 
                 <li class="nav-item ">
-                  <a class="nav-link" href="#admission"> Admission </a>
+                  <a class="nav-link" href="#keunggulan"> Keunggulan </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="#why"> Why Us </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial"> Testimonial </a>
                 </li>
 
                 <li class="nav-item">
@@ -82,7 +86,7 @@
         </nav>
       </div>
     </header>
-    <section class="hero_section ">
+    <section class="hero_section" id="home">
       <div class="hero-container container">
         <div class="hero_detail-box">
           <h1>
@@ -109,11 +113,16 @@
     </section>
   </div>
   <!-- end header section -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#29abe2" fill-opacity="1"
+      d="M0,32L40,58.7C80,85,160,139,240,160C320,181,400,171,480,170.7C560,171,640,181,720,202.7C800,224,880,256,960,229.3C1040,203,1120,117,1200,85.3C1280,53,1360,75,1400,85.3L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+    </path>
+  </svg>
 
-  <div class="common_style" id="about">
+  <div class="common_style">
 
     <!-- about section -->
-    <section class="about_section">
+    <section class="about_section" id="about">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -144,19 +153,22 @@
     <!-- end about section -->
 
     <!-- admission section -->
-    <section class="admission_section" id="admission">
+    <section class="admission_section" id="keunggulan">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="admission_detail-box">
+            <div class="admission_detail-box row-gap-16">
               <h3>
-                Admission open
+                Keunggulan Kami :
               </h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              </p>
+              <ul class="list-group custom">
+                <li class="list-group-item">Pendampingan Siap Aqil Baligh langsung oleh yayasan Peduli Sahabat</li>
+                <li class="list-group-item">Lingkungan belajar dan tinggal (boarding) yang nyaman di kota</li>
+                <li class="list-group-item">Tenaga pengajar yang kompeten dan terverifikasi</li>
+                <li class="list-group-item">Aktivitas based on project yang aktif, interaktif, dan menarik</li>
+                <li class="list-group-item">Pengarahan dan pengembangan minat & bakat (termasuk tahfidz)</li>
+                <li class="list-group-item">Praktik nyata life skill baik untuk pribadi maupun sosial masyarakat</li>
+              </ul>
               <div class="">
                 <a href="" class="call_to-btn btn_white-border">
                   Read More
@@ -247,7 +259,7 @@
 
 
   <!-- client section -->
-  <section class="client_section layout_padding">
+  <section class="client_section layout_padding" id="testimonial">
     <h2 class="">
       Testimonial
     </h2>
@@ -488,7 +500,7 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-
+  <script src="./js/script.js"></script>
 
 </body>
 
