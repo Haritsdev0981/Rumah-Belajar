@@ -1,6 +1,6 @@
 html {
 	scroll-behavior: smooth;
-	scroll-padding: 80px;
+	scroll-padding: 75px;
 }
 
 body {
@@ -200,7 +200,7 @@ nav a.nav-link:hover::after {
 /* hero section */
 .hero-container {
 	display: flex;
-	padding-top: 100px;
+	padding-top: 110px;
 	padding-bottom: 325px;
 	column-gap: 32px;
 }
@@ -363,7 +363,8 @@ nav a.nav-link:hover::after {
 	width: 100px;
 	height: 30px;
 	border-radius: 20px;
-	background-color: #fdd31d;
+	background-color: var(--orange-sahabat);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .client_img-box::before {
@@ -442,12 +443,27 @@ nav a.nav-link:hover::after {
 	align-items: center;
 }
 
-.contact_section input {
+.contact_section input, .contact_section span {
 	border: none;
 	outline: none;
 	border-bottom: 1px solid #000;
 	width: 90%;
 	margin: 15px 0;
+	resize: none;
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: "Message";
+  color: gray;
 }
 
 .contact_form-container button {
@@ -592,4 +608,9 @@ nav a.nav-link:hover::after {
 	.hero_section > div.hero-container.container {
 		padding-top: 90px;
 	}
+}
+
+div.row {
+	margin-right: 0;
+	margin-left: 0;
 }
