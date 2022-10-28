@@ -294,14 +294,14 @@ nav a.nav-link:hover::after {
 
 /* end about section */
 
-/* admission section */
+/* keunggulan section */
 
-.admission_section a {
+.keunggulan_section a {
 	background-color: var(--orange-sahabat);
 	color: #fefeff;
 }
 
-/* end admission section */
+/* end keunggulan section */
 
 /* why section */
 
