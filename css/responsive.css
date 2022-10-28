@@ -130,6 +130,10 @@
 	.info_section .social-box {
 		width: auto;
 	}
+
+	.hide-on-phone {
+		display: none;
+	}
 }
 
 @media (max-width: 480px) {

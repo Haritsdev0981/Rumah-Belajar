@@ -91,6 +91,14 @@ nav.navbar.navbar-expand-lg {
 	text-align: center;
 }
 
+.custom_nav-container a {
+	color: #f7f6f7;
+}
+
+.custom_nav-container a:hover {
+	color: #f7f6f7;												
+}
+
 a,
 a:hover,
 a:focus {
@@ -671,9 +679,10 @@ ul.list-group.custom li {
 	padding: 8px 64px;
 }
 
-.swiper-slide img, .swiper-slide h4 {
+.swiper-slide img,
+.swiper-slide h4 {
 	border-radius: 16px;
-	transition: box-shadow .5s;
+	transition: box-shadow 0.5s;
 }
 
 .swiper-slide img:hover {
