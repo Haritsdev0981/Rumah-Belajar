@@ -1,5 +1,3 @@
-const headerSection = document.querySelector('.header_section')
-
 const swiperWrapper = document.querySelector('.container .swiper-wrapper')
 
 const facilities = [
@@ -32,12 +30,6 @@ facilities.forEach((facility, idx) => {
         <h4>${facility}</h4>
     </div>
     `
-})
-
-
-addEventListener('scroll', e => {
-    if (window.scrollY > 0) headerSection.classList.add('add-shadow')
-    else headerSection.classList.remove('add-shadow')
 })
 
 const sections = document.querySelectorAll('section[id]')
