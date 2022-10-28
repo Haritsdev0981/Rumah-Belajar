@@ -12,7 +12,7 @@ const facilities = [
     "Lorong Bawah",
     "Resepsionis (Samping)",
     "Resepsionis (Depan)",
-    "Resepsionis 2",
+    "Ruang Acak",
     "Ruang ber-ac 1",
     "Ruang ber-ac 2",
     "Ruang ber-ac 3",
@@ -28,7 +28,7 @@ const facilities = [
 facilities.forEach((facility, idx) => {
     swiperWrapper.innerHTML += `
     <div class="swiper-slide d-grid">
-        <img src="./img/img-ruang/fasilitas (${idx+1}).jpeg" alt="fasilitas ${idx+1}">
+        <img src="./img/img-ruang/fasilitas (${idx + 1}).jpeg" alt="fasilitas ${idx + 1}">
         <h4>${facility}</h4>
     </div>
     `
@@ -79,5 +79,8 @@ const swiper = new Swiper('.swiper', {
     // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
+    },
+    autoplay: {
+        delay: 5000,
     },
 });

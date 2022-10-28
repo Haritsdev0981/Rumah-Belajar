@@ -40,6 +40,10 @@ body {
 	transition: all 0.3s ease 0s;
 }
 
+.hero_section > div {
+	background-color: var(--blue-sahabat);
+}
+
 .hero_section .call_to-btn {
 }
 
@@ -124,18 +128,6 @@ nav a.nav-link::after {
 nav a.nav-link.active::after,
 nav a.nav-link:hover::after {
 	width: 100%;
-}
-
-.top_container::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	/*background: 0 100px url(../IMG/wave.svg), linear-gradient(180deg, var(--blue-sahabat) 15%, transparent 15%);*/
-	background: var(--blue-sahabat);
-	background-size: cover;
-	background-repeat: no-repeat;
-	z-index: -1;
 }
 
 .sub_page .top_container::before {
@@ -669,7 +661,7 @@ ul.list-group.custom li {
 }
 
 .swiper {
-  max-width: 600px;
+	max-width: 600px;
 }
 
 .d-grid {
@@ -687,7 +679,30 @@ ul.list-group.custom li {
 	grid-column: 1 / -1;
 	grid-row: -2 / -1;
 	color: white;
-	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 0.5) 100%
+	);
 	margin: 0;
 	padding: 8px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	color: var(--old-blue);
+}
+
+.row.custom {
+	column-gap: 16px;
+}
+
+.row.custom img {
+	max-width: 50px;
+	width: 100%;
+}
+
+.row.custom p {
+	margin: 0;
+	flex: 1;
 }
