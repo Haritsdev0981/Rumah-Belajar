@@ -26,7 +26,7 @@ const facilities = [
 facilities.forEach((facility, idx) => {
     swiperWrapper.innerHTML += `
     <div class="swiper-slide d-grid">
-        <img src="./img/img-ruang/fasilitas (${idx + 1}).jpeg" alt="fasilitas ${idx + 1}">
+        <img src="./IMG/img-ruang/fasilitas (${idx + 1}).jpeg" alt="fasilitas ${idx + 1}">
         <h4>${facility}</h4>
     </div>
     `
