@@ -1,6 +1,6 @@
 html {
 	scroll-behavior: smooth;
-	scroll-padding: 75px;
+	scroll-padding: 35px;
 }
 
 body {
@@ -666,4 +666,28 @@ ul.list-group.custom li {
 	display: flex;
 	flex-direction: column;
 	row-gap: 16px;
+}
+
+.swiper {
+  max-width: 600px;
+}
+
+.d-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr) 0.5fr;
+}
+
+.d-grid > img {
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+}
+
+.d-grid > h4 {
+	grid-column: 1 / -1;
+	grid-row: -2 / -1;
+	color: white;
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%);
+	margin: 0;
+	padding: 8px;
 }

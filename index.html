@@ -29,6 +29,9 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <!-- Swiper JS -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
 </head>
 
@@ -67,7 +70,7 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#testimonial"> Testimonial </a>
+                  <a class="nav-link" href="#fasilitas"> Fasilitas </a>
                 </li>
 
                 <li class="nav-item">
@@ -263,84 +266,28 @@
 
 
   <!-- client section -->
-  <section class="client_section layout_padding" id="testimonial">
+  <section class="client_section layout_padding" id="fasilitas">
     <h2 class="">
-      Testimonial
+      Fasilitas
     </h2>
-    <div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="client_img-box">
-                  <img src="IMG/Kak-Sinyo.png" alt="">
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="client_detail-box">
-                  <h5>
-                    Kak Sinyo
-                  </h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex
-                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="client_img-box">
-                  <img src="IMG/Dewi-inong.png" alt="">
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="client_detail-box">
-                  <h5>
-                    dr. Dewi
-                  </h5>
-                  <p>
-                    Sekolah ini sangat luat biasa karena disini belajar agama, IT dasar sekaligus kita diajarkan tentang
-                    bahayanya narkoba dan pornografi, sekolah ini sangat cocok untuk mengatasi permasalahan remaja yang
-                    biasa terjadi diluaran sana
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="client_img-box">
-                  <img src="images/client.png" alt="">
-                </div>
-              </div>
-              <div class="col-md-9">
-                <div class="client_detail-box">
-                  <h5>
-                    Harits
-                  </h5>
-                  <p>
-                    Sekolah ini sangat luat biasa karena disini belajar agama, IT dasar sekaligus kita diajarkan tentang
-                    bahayanya narkoba dan pornografi, sekolah ini sangat cocok untuk mengatasi permasalahan remaja yang
-                    biasa terjadi diluaran sana
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="container mt-5">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <!--<div class="swiper-slide"><img src="./img/img-ruang/fasilitas (1).jpeg" alt=""></div>-->
+
+          <!--<div class="swiper-slide d-grid">
+            <img src="./img/img-ruang/fasilitas (2).jpeg" alt="fasilitas 2">
+            <h4>Gedung Depan</h4>
+          </div>-->
         </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
 
     </div>
@@ -504,6 +451,7 @@
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/script.js"></script>
 
 </body>
