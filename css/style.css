@@ -44,9 +44,6 @@ body {
 	background-color: var(--blue-sahabat);
 }
 
-.hero_section .call_to-btn {
-}
-
 .call_to-btn img {
 	width: 18px;
 	margin-left: 10px;
@@ -283,8 +280,14 @@ nav a.nav-link:hover::after {
 /* end common style */
 
 /* about section */
-.about_section {
-	text-align: right;
+section.about_section {
+	padding-bottom: 0;
+	padding-top: 1rem;
+}
+
+.about_section p {
+	margin: 0;
+	margin-bottom: 1rem;
 }
 
 .about_section a {
@@ -661,7 +664,25 @@ ul.list-group.custom li {
 }
 
 .swiper {
-	max-width: 600px;
+	max-width: 800px;
+}
+
+.swiper-slide {
+	padding: 8px 64px;
+}
+
+.swiper-slide img, .swiper-slide h4 {
+	border-radius: 16px;
+	transition: box-shadow .5s;
+}
+
+.swiper-slide img:hover {
+	box-shadow: 0 0 10px 0 rgb(0 0 0 / 25%);
+}
+
+.swiper-slide h4 {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
 
 .d-grid {
@@ -690,7 +711,7 @@ ul.list-group.custom li {
 
 .swiper-button-prev:after,
 .swiper-button-next:after {
-	color: var(--old-blue);
+	color: var(--blue-sahabat);
 }
 
 .row.custom {
@@ -705,4 +726,8 @@ ul.list-group.custom li {
 .row.custom p {
 	margin: 0;
 	flex: 1;
+}
+
+.program_detail-box p {
+	margin: 16px 0;
 }
