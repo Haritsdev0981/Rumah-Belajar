@@ -7,6 +7,7 @@ body {
 	font-family: "Raleway", sans-serif;
 	background-color: #fefeff;
 	overflow-x: hidden;
+	height: auto;
 }
 
 .layout_padding {
@@ -96,7 +97,7 @@ nav.navbar.navbar-expand-lg {
 }
 
 .custom_nav-container a:hover {
-	color: #f7f6f7;												
+	color: #f7f6f7;
 }
 
 a,
@@ -159,17 +160,6 @@ nav a.nav-link:hover::after {
 	margin-right: 7px;
 }
 
-.custom_nav-container .nav_search-btn {
-	background-image: url(../images/search-icon.png);
-	background-size: 22px;
-	background-repeat: no-repeat;
-	background-position-y: 7px;
-	width: 35px;
-	height: 35px;
-	padding: 0;
-	border: none;
-}
-
 .navbar-brand {
 	display: flex;
 	align-items: center;
@@ -191,7 +181,7 @@ nav a.nav-link:hover::after {
 }
 
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
-	background-image: url(../images/menu.png);
+	background-image: url(../images/menu.webp);
 	background-size: 40px;
 }
 
@@ -288,10 +278,6 @@ nav a.nav-link:hover::after {
 /* end common style */
 
 /* about section */
-section.about_section {
-	padding-bottom: 0;
-	padding-top: 1rem;
-}
 
 .about_section p {
 	margin: 0;
@@ -343,14 +329,14 @@ section.about_section {
 
 /* end why section */
 
-/* determine section */
+/* pengajar section */
 
-.determine_section a {
+.pengajar_section a {
 	background-color: var(--orange-sahabat);
 	color: #fefeff;
 }
 
-/* end determine section */
+/* end pengajar section */
 
 /* client section */
 .client_section h2,
